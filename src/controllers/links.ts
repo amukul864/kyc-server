@@ -250,8 +250,8 @@ export const reports = async (req: Request, res: Response) => {
           doc
             .fontSize(14)
             .text(
-              `${
-                "localhost:4000/" +
+              `${process.env.SERVER_URL}${
+                "/" +
                 reportUrl +
                 "/video-consent/videoConsent.mp4"
               } : Video Link`,
